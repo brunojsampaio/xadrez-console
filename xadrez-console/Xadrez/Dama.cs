@@ -30,7 +30,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.Linha--;
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna);
             }
             // abaixo
             posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna);
@@ -41,7 +41,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.Linha++;
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna);
             }
             // direita
             posicao.DefinirValores(Posicao.Linha, Posicao.Coluna + 1);
@@ -52,7 +52,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.Coluna++;
+                posicao.DefinirValores(posicao.Linha, posicao.Coluna + 1);
             }
             // esquera
             posicao.DefinirValores(Posicao.Linha, Posicao.Coluna - 1);
@@ -63,7 +63,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.Coluna--;
+                posicao.DefinirValores(posicao.Linha, posicao.Coluna - 1);
             }
             // NO
             posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
@@ -74,7 +74,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna - 1);
             }
             // NE
             posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
@@ -85,7 +85,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna + 1);
             }
             // SE
             posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
@@ -96,7 +96,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna + 1);
             }
             // SO
             posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
@@ -107,7 +107,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna - 1);
             }
 
             return movimentosPossiveis;

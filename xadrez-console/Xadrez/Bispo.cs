@@ -30,7 +30,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna - 1);
             }
             // NE
             posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
@@ -41,7 +41,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
+                posicao.DefinirValores(posicao.Linha - 1, posicao.Coluna + 1);
             }
             // SE
             posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
@@ -52,7 +52,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna + 1);
             }
             // SO
             posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
@@ -63,7 +63,7 @@ namespace Xadrez
                 {
                     break;
                 }
-                posicao.DefinirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
+                posicao.DefinirValores(posicao.Linha + 1, posicao.Coluna - 1);
             }
 
             return movimentosPossiveis;
